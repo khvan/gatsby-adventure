@@ -1,17 +1,20 @@
 import React from 'react';
-import NavBar from './NavBar';
+import Navbar from './NavBar';
 import Footer from './Footer';
 import {FaJenkins} from 'react-icons/fa'; 
 import './layout.css';
 
 
-export default function Layout ({children}) {
+const Layout = ({children}) => {
   return (
-  <>
-  <NavBar />
+    <>
+  <Navbar />
   <FaJenkins />
   {children}
   <Footer />
   </>
   )
 }
+
+
+export default Layout;

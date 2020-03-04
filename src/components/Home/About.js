@@ -3,7 +3,7 @@ import Title from '../Title';
 import styles from '../../css/about.module.css';
 import img from '../../images/defaultBcg.jpeg';
 
-const About = ({}) => {
+const About = () => {
   return (
     <section className={styles.about}>
       Hello from About

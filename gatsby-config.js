@@ -5,9 +5,23 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: 'HelloWorld',
+    description: 'Explore aweome HelloWorld',
+    author: '@johndoe',
+    data: ["item1", "item2"]
+  },
+
   plugins: [
     {
-    resolve: `gatsby-plugin-styled-components`
-    }
-  ]
-}
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+    },
+  ],
+};

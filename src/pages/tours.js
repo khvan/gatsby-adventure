@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {Link} from 'gatsby';
 import Layout from '../components/Layout';
+import RegularHeader from '../examples/RegularHeader';
 
 
 
@@ -10,6 +10,7 @@ export default class tours extends Component {
     return (
     <Layout>
       Tours
+      <RegularHeader />
       </Layout>
     );
   }

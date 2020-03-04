@@ -3,7 +3,7 @@ import {Link} from 'gatsby';
 import styles from '../css/footer.module.css';
 import links from '../constants/links';
 import socialIcons from '../constants/social-icons';
-import {FaSmokingBan} from 'react-icons/fa';
+
 
 const Footer = () => {
   return (
@@ -19,7 +19,7 @@ const Footer = () => {
         <div className ={styles.icons}>
         {socialIcons.map ((item,index) => {
           return(
-            <a key = {index} href={item.url} target= "_blank">
+            <a key = {index} href={item.url} target= "_blank" rel="noopener noreferrer">
               {item.icon}
             </a>
           )

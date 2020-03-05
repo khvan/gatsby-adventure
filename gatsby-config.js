@@ -23,6 +23,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-styled-components`,
     },
+    `gatsby-plugin-transition-link`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
   ],

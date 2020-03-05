@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import Layout from '../components/Layout';
 import StyledHero from '../components/StyledHero';
 import Banner from '../components/Banner';
@@ -15,9 +15,9 @@ export default ({data}) => (
         title="hello world"
         info="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pulvinar."
       >
-      <Link to="/tours" className = "btn-white">
+      <AniLink to="/tours" className = "btn-white">
         Explore Hello World
-      </Link>
+      </AniLink>
       </Banner>
     </StyledHero>
     <About />

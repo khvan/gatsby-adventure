@@ -2,8 +2,25 @@ import React from 'react';
 import Title from '../Title';
 import styles from '../../css/about.module.css';
 import img from '../../images/defaultBcg.jpeg';
+import {useStaticQuery, graphql} from 'gatsby';
+
+const getAbout = graphql`
+query aboutImage {
+  aboutImage: file (relativePath:{eq: "defaultBcg.jpeg"}){
+    childImageSharp{
+      fluid(maxWidth: 500){
+        src
+      }
+    }
+  }
+  
+}
+
+`;
 
 const About = () => {
+  const {aboutImage} = useStaticQuery(getAbout);
+
   return (
     <section className={styles.about}>
       Hello from About
@@ -25,9 +42,9 @@ const About = () => {
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas imperdiet vitae orci.
           </p>
-        <button type="button" className="btn-primary">
-          Read More
-        </button>
+          <button type="button" className="btn-primary">
+            Read More
+          </button>
         </article>
       </div>
     </section>

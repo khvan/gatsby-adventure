@@ -9,7 +9,7 @@ module.exports = {
     title: 'HelloWorld',
     description: 'Explore aweome HelloWorld',
     author: '@johndoe',
-    data: ["item1", "item2"]
+    data: ['item1', 'item2'],
   },
 
   plugins: [
@@ -23,5 +23,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-styled-components`,
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
   ],
 };
